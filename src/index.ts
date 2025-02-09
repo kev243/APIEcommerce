@@ -5,6 +5,7 @@ const app = express();
 const port = 3000;
 
 app.use(urlencoded({ extended: false }));
+app.use(json());
 // app.use(
 //   json({
 //     verify: (req: Request, res, buf) => {

@@ -20,7 +20,8 @@ export async function getProductById(req: Request, res: Response) {
 
 export async function createProduct(req: Request, res: Response) {
   try {
-    res.json("Hello products!");
+    console.log(req.body);
+    res.json(req.body);
   } catch (e) {
     console.log(e);
     res.status(500).send(e);
